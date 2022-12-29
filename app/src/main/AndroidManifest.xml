@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TimerForApps"
         tools:targetApi="31">
+
+        <service android:name=".TimerForOpenedApp"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -19,7 +22,6 @@
             android:theme="@style/Theme.TimerForApps.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
